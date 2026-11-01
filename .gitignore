@@ -1,0 +1,45 @@
+# ========================================
+# macOS system files
+# ========================================
+.DS_Store
+._*
+__MACOSX/
+
+# ========================================
+# Python temporary files
+# ========================================
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+
+# ========================================
+# Local training and source data
+# Distributed separately
+# ========================================
+/data/
+
+# ========================================
+# Generated charging-library experiments
+# ========================================
+/experiments/build_charging_library/
+
+# ========================================
+# Generated caches
+# ========================================
+**/stage2_domain_cache/
+.ipynb_checkpoints/
+
+# ========================================
+# Logs and temporary files
+# ========================================
+*.log
+*.tmp
+
+# ========================================
+# Sensitive environment files
+# ========================================
+.env
+.env.*

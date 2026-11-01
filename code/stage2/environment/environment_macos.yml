@@ -1,0 +1,17 @@
+# Stage-2 reproducibility environment, macOS (Apple Silicon MPS).
+# Package versions are taken from the tested FIB-SEM-214 snapshot.
+name: cryo-fib-sem-stage2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.16
+  - pip
+  - pip:
+      - torch==2.14.0
+      - numpy==2.4.6
+      - scipy==1.17.1
+      - opencv-python==5.0.0.93
+      - tifffile==2026.3.3
+      - imagecodecs==2026.3.6
+      - matplotlib==3.11.2
+      - tqdm==4.70.1

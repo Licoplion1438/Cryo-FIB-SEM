@@ -1,0 +1,16 @@
+# Segmentation-only CUDA environment: Linux x86_64 + NVIDIA GPU.
+# PyTorch 2.5.1+cu124 is the official CUDA 12.4 wheel.
+# These installation files have NOT yet been tested by running a fresh GPU environment.
+name: cryo-fib-sem-segmentation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu124
+      - torch==2.5.1+cu124
+      - numpy==2.1.3
+      - scipy==1.18.1
+      - opencv-python-headless==4.11.0.86
+      - tifffile==2026.9.15

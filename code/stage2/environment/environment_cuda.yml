@@ -1,0 +1,20 @@
+# Stage-2 reproducibility environment, Linux x86_64 / NVIDIA GPU.
+# Tested macOS scientific versions; CUDA packaging is not yet runtime-tested.
+# Exact PyTorch 2.14.0 CUDA 12.6 wheel confirmed in the official wheel index.
+# The wheel is manylinux_2_28; host glibc and NVIDIA driver must be compatible.
+name: cryo-fib-sem-stage2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.16
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu126
+      - torch==2.14.0+cu126
+      - numpy==2.4.6
+      - scipy==1.17.1
+      - opencv-python==5.0.0.93
+      - tifffile==2026.3.3
+      - imagecodecs==2026.3.6
+      - matplotlib==3.11.2
+      - tqdm==4.70.1
