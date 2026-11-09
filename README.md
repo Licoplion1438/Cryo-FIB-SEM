@@ -1,4 +1,4 @@
-# Cryo-FIB-SEM artifact suppression and ultrastructural visualization
+# Cryo-FIB-SEM artifact suppression and ultrastructural visualization enhancement
 
 This repository provides the **post-acquisition two-stage processing framework** evaluated in our cryo-FIB-SEM manuscript, together with data-preparation scripts, training code, inference entry points, and an optional downstream CebraNET membrane-segmentation workflow.
 
